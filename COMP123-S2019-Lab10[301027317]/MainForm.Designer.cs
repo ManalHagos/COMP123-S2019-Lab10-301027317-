@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.TheNextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -40,12 +41,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to Main Form";
             // 
+            // TheNextButton
+            // 
+            this.TheNextButton.Location = new System.Drawing.Point(271, 355);
+            this.TheNextButton.Name = "TheNextButton";
+            this.TheNextButton.Size = new System.Drawing.Size(229, 60);
+            this.TheNextButton.TabIndex = 1;
+            this.TheNextButton.Text = "NextButton";
+            this.TheNextButton.UseVisualStyleBackColor = true;
+            this.TheNextButton.Click += new System.EventHandler(this.TheNextButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(778, 544);
+            this.Controls.Add(this.TheNextButton);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -53,6 +65,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +74,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button TheNextButton;
     }
 }
 

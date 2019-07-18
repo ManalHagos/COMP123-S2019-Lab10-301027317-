@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BackButton_Click = new System.Windows.Forms.Button();
+            this.TheBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BackButton_Click
+            // TheBackButton
             // 
-            this.BackButton_Click.Location = new System.Drawing.Point(262, 274);
-            this.BackButton_Click.Name = "BackButton_Click";
-            this.BackButton_Click.Size = new System.Drawing.Size(242, 57);
-            this.BackButton_Click.TabIndex = 0;
-            this.BackButton_Click.Text = "BackButton";
-            this.BackButton_Click.UseVisualStyleBackColor = true;
-            this.BackButton_Click.Click += new System.EventHandler(this.BackButton_Click_Click);
+            this.TheBackButton.Location = new System.Drawing.Point(244, 301);
+            this.TheBackButton.Name = "TheBackButton";
+            this.TheBackButton.Size = new System.Drawing.Size(234, 60);
+            this.TheBackButton.TabIndex = 0;
+            this.TheBackButton.Text = "BackButton";
+            this.TheBackButton.UseVisualStyleBackColor = true;
+            this.TheBackButton.Click += new System.EventHandler(this.TheBackButton_Click);
             // 
             // EndForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 544);
-            this.Controls.Add(this.BackButton_Click);
+            this.Controls.Add(this.TheBackButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MinimizeBox = false;
@@ -60,6 +60,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BackButton_Click;
+        private System.Windows.Forms.Button TheBackButton;
     }
 }

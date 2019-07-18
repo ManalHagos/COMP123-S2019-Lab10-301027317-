@@ -17,9 +17,15 @@ namespace COMP123_S2019_Lab10_301027317_
             InitializeComponent();
         }
 
-        private void BackButton_Click_Click(object sender, EventArgs e)
+        private void TheBackButton_Click(object sender, EventArgs e)
         {
+            TheBackButton.Enabled = false;
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
             
         }
+
+       
     }
 }

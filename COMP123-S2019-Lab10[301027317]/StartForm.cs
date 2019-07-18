@@ -17,6 +17,7 @@ namespace COMP123_S2019_Lab10_301027317_
             InitializeComponent();
         }
 
+
         private void StartForm_Load(object sender, EventArgs e)
         {
             SplashTimer.Enabled = true;
@@ -28,6 +29,7 @@ namespace COMP123_S2019_Lab10_301027317_
             MainForm mainForm = new MainForm();
             mainForm.Show();
             this.Hide();
+            
         }
     }
 }

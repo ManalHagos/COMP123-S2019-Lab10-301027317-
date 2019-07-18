@@ -6,8 +6,11 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_301027317_
 {
-    static class Program
+    public static class Program
     {
+        public static StartForm startForm;
+        public static MainForm mainForm;
+        public static EndForm endForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,13 @@ namespace COMP123_S2019_Lab10_301027317_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            startForm = new StartForm();
+            mainForm = new MainForm();
+            endForm = new EndForm();
             Application.Run(new StartForm());
+            Program.startForm.Hide();
+            Program.mainForm.Show();
         }
+       
     }
 }
